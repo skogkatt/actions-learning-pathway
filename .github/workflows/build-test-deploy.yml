@@ -54,6 +54,10 @@ jobs:
           with:
             static_site_generator: next
             
+        - name: show path
+          run: |
+            find src
+            
         - name: upload artifacts
           uses: actions/upload-pages-artifact@v1
           with: 
